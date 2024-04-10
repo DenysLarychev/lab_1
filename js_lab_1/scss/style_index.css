@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* параметры обнуления */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* убирает линии обводки у некоторых браузеров */
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+/* границы блоков - новый расчеты */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* части страницы придает значение блоков */
+nav, footer, header, aside {
+  display: block;
+}
+
+/* уравнивает поведение шрифтов в разных браузерах */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* унаследование семейства шрифта основного документа (так как по умолчанию имеют свои параметры */
+input, button, textarea {
+  font-family: inherit;
+}
+
+/* убира/т некоторые особенности в разных браузерах*/
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/* обнуляем все заголовки H */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* ----------- */
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__item-title {
+  text-align: center;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.header__item-text {
+  text-align: center;
+}
+
+.main {
+  flex: 1 1 auto;
+  padding: 20px 0;
+  text-transform: uppercase;
+  color: red;
+  font-weight: 700;
+}
+
+.main__item {
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer__item {
+  text-align: center;
+  line-height: 3;
+  color: white;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 24px;
+}/*# sourceMappingURL=style_index.css.map */

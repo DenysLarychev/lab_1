@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style_index.css">
+    <title>JS lab_1</title>
+</head>
+<body>
+   <div class="wrapper">
+    <header class="header">
+        <div class="header__item container">
+            <h1 class="header__item-title ">Laboratory Work # 1</h1>
+            <h2 class="header__item-text">by Larychev Yehor</h2>
+            <h2 class="header__item-text">JavaScript basic syntax. Interaction with a user through dialog boxes.</h2>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__item container">
+            <div id="app"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__item container">(c) 2024 Larychev Yehor CST 3.01</div>
+    </footer>
+   </div>
+   <script>
+        let q1 = prompt('Enter your login here', 'admin');
+        const admin = '<h1>Hello, Admin!</h1><img src="img/admin_cat.jpeg">';
+        const guest = '<h1>Hello, Guest!</h1><img src="img/gst_cat.jpeg">';
+        let q2 = confirm('Woulf you like to contimue authentication?');
+        let out = (q1=='admin'&&q2==true)? admin:guest;
+        document.getElementById("app").innerHTML=out;
+   </script>
+</body>
+</html>
